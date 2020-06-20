@@ -1,0 +1,6 @@
+ps
+pwd
+migrate 4672     el id de proceso
+getpid
+getuid
+getsystem

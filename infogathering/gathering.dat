@@ -1,0 +1,12 @@
+nmap -sV IP
+telnet ip 80
+ls
+HEAD/ HTTP/1.1
+
+Dirb http://ip
+
+Con metasploit
+use auxiliary/scanner/http/dir_scanner
+show options
+set RHOSTS ip
+exploit

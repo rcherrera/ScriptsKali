@@ -1,0 +1,12 @@
+setoolkit
+
+en blackeye:
+chmod +x blackeye.sh
+./blackeye.sh
+
+ghost-phisher
+
+nm-connection-editor
+
+dns chef
+dnschef --fakeip=10.42.0.1 --fakedomains=www.colegiodeingenieros.com

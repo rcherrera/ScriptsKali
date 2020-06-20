@@ -1,0 +1,24 @@
+primero habilitar el uso compartido en windows
+
+apt-get install samba
+cd /etc/samba
+cp smb.conf smb.conf.bak    para sacar backup
+nano smb.conf y ponemos el grupo de trabajo workgroup
+
+hacemos usuarios:
+sudo useradd user01
+sudo smbpasswd -a user01
+
+si queremos cambbiar contrasenia smbpasswd user01
+
+smbclient --list IP_delamaquinawin
+
+para montar:
+sudo mount -o username=root //IP/recurso /mnt/recurso_montado
+o
+mount //102.168.10.10/shr10  /mnt/shr
+
+si aparece un error > wrong fs type, bad option...
+se arregla instalando:
+sudo apt-get install cifs-utils
+
