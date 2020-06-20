@@ -1,0 +1,23 @@
+git config --list
+
+//en la carpeta o repositorio
+git init
+
+echo "hello world ! " >readme.md
+
+git add readme.md
+
+git commit -m "primer git"
+
+gir remote add origin url
+
+git push -u origin master
+
+//clone
+git clone url
+
+//paso rapido 
+git add file
+git push -u origin master
+
+https://david-estevez.gitbooks.io/the-git-the-bad-and-the-ugly/content/es/trabajando-con-ramas.html
