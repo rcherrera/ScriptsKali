@@ -1,0 +1,10 @@
+contraseña de git
+L3xPr0dCtrl
+
+
+Git basico
+sudo apt-get install git
+configuracion:
+git config --global user.email robertio.carlos@gmail.com
+git config --global core.editor nano
+(las dos ultimas lineas solo se hacen una vez)
